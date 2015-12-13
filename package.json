@@ -1,0 +1,16 @@
+{
+  "name": "zebra-stripes",
+  "main": "./lib/zebra-stripes",
+  "version": "1.0.0",
+  "description": "add zebra striping to the editors",
+  "keywords": [
+  ],
+  "activationCommands":  [],
+  "repository": "https://github.com/prodigic/zebra-stripes",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

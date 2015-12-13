@@ -1,0 +1,17 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Zebra Stripes'
+      'command': 'zebra-stripes:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'View'
+    'submenu': [
+      'label': 'Toggle Stripes'
+      'command': 'zebra-stripes:toggle'
+    ]
+  }
+]
