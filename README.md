@@ -33,7 +33,7 @@ The settings panel allows you to enable/disable logging to the console.
 ## Adding support to an existing theme
 
 ### using zebra-stripes.less
-
+``` css
     .zebra-stripes.theme-base16-tomorrow-dark-theme,
     .zebra-stripes.theme-one-dark-syntax,
     .zebra-stripes.theme-solarized-dark-syntax,
@@ -57,9 +57,9 @@ The settings panel allows you to enable/disable logging to the console.
         }
       }
     }
-
+```
 ### using the themes own CSS
-
+``` css
     .zebra-stripes.theme-mycooltheme-dark-syntax  {
       // To style other content in the text editor's shadow DOM, use the ::shadow expression
       atom-text-editor::shadow {
@@ -77,3 +77,4 @@ The settings panel allows you to enable/disable logging to the console.
         }
       }
     }
+```
