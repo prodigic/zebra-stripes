@@ -1,5 +1,5 @@
-# zebra-stripes package
+# Zebra-stripes
 
-A short description of your package.
+Provides alternate line shading to increase legibility in text editors. Setting panel allows you to disable the
 
-![A screenshot of your package](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-dark-theme.png)
+![Preview dark theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-dark-theme.png)
