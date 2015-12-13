@@ -20,7 +20,7 @@ class ZebraStripesView
 
   # Tear down any state and detach
   destroy: ->
-    workspace.classList.remove @showStripes
+    @workspace.classList.remove @showStripes
 
   # invert settings value
   toggle: ->
