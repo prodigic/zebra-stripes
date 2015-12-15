@@ -18,7 +18,7 @@ The settings panel allows you to enable/disable logging to the console.
 
 `apm install zebra-stripes`
 
-## Supported Themes
+## Supported Syntax Themes
 
 1. Atom Dark
 2. Atom Light
@@ -30,7 +30,7 @@ The settings panel allows you to enable/disable logging to the console.
 8. Solarized Light
 
 
-## Adding support to an existing theme
+## Adding support to an existing syntax theme
 
 ### using zebra-stripes.less
 ``` css
@@ -58,7 +58,7 @@ The settings panel allows you to enable/disable logging to the console.
       }
     }
 ```
-### using the themes own CSS
+### building support directly into the theme.
 ``` css
     .zebra-stripes.theme-mycooltheme-dark-syntax  {
       // To style other content in the text editor's shadow DOM, use the ::shadow expression
