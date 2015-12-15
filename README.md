@@ -17,13 +17,13 @@ The settings panel allows you to enable/disable logging to the console.
 
 ## Installation
 
-install from either the settings panel or use apm on the command line
+install from either the settings panel
 
 ![Preview Settings Panel](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-settings-panel.png?raw=true)
 
+or use apm on the command line
+
 `apm install zebra-stripes`
-
-
 
 ## Supported Syntax Themes
 
