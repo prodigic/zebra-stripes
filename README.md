@@ -1,4 +1,4 @@
-# Zebra-stripes
+# zebra-stripes
 
 Provides alternate line shading to increase legibility in text editors.
 
