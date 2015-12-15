@@ -1,7 +1,7 @@
 {
   "name": "zebra-stripes",
   "main": "./lib/zebra-stripes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "add zebra striping to the editors",
   "author": "Davey Waterson <davey@prodigic.com>",
   "keywords": [
