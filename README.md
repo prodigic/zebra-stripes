@@ -9,6 +9,7 @@ The settings panel allows you to enable/disable logging to the console.
 ## Examples
 
 ### Dark Theme
+
 ![Preview dark theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-dark-theme.png?raw=true)
 
 ### Light Theme
@@ -16,7 +17,13 @@ The settings panel allows you to enable/disable logging to the console.
 
 ## Installation
 
+install from either the settings panel or use apm on the command line
+
+![Preview light theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-settings-panel.png?raw=true)
+
 `apm install zebra-stripes`
+
+
 
 ## Supported Syntax Themes
 
