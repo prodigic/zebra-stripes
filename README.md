@@ -28,6 +28,7 @@ The settings panel allows you to enable/disable logging to the console.
 6. Base16 Tomorrow Light
 7. Solarized Dark
 8. Solarized Light
+9. Monokai Seti
 
 
 ## Adding support to an existing syntax theme
