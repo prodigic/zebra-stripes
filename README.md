@@ -40,14 +40,14 @@ or use apm on the command line
 
 ## Adding support to an existing syntax theme
 
-You can easily add support for installed syntax themes by adding a selector
-to the zebra-stripes.less
+You can easily add support for installed syntax themes by adding a selector to the appropriate block to the zebra-stripes.less file in the plugins styles folder.
 
-### using zebra-stripes.less
+### Using zebra-stripes.less (local changes)
 ``` css
 
 .zebra-stripes {
 
+  &.theme-my-syntax-dark-theme,
   &.theme-atom-dark-syntax,
   &.theme-monokai-seti,
   &.theme-base16-tomorrow-dark-theme,
@@ -64,6 +64,7 @@ to the zebra-stripes.less
 
 .zebra-stripes {
 
+  &.theme-my-syntax-light-theme,
   &.theme-base16-tomorrow-light-theme,
   &.theme-one-light-syntax,
   &.theme-solarized-light-syntax,
@@ -78,16 +79,24 @@ to the zebra-stripes.less
 }
 
 ```
+
+Drop me a pull request if you want specific support added to the zebra-stripes plugin for your theme.
+
+
+
 ### building support directly into the theme.
+
+To add built-in support to custom themes you need to implement a CSS rule to provide the stripe effect. This is also useful if you wish to use a different color for the alternate line shading.
+
 ``` css
 
 .zebra-stripes {
 
-  .theme-mycooltheme-dark-syntax {
+  .theme-my-syntax-theme {
 
     atom-text-editor::shadow {
       .line:nth-child(odd) {
-        background-color:rgba(255, 255, 255,0.042); /* set alternate color here */
+        background-color:rgba(25, 25, 25,0.084); /* set alternate color here */
       }
     }
   }
