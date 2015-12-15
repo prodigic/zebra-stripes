@@ -4,15 +4,15 @@ Provides alternate line shading to increase legibility in text editors.
 
 The settings panel allows you to enable/disable logging to the console.
 
-![Settings](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-settings.png)
+![Settings](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-settings.png?raw=true)
 
 ## Examples
 
 ### Dark Theme
-![Preview dark theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-dark-theme.png)
+![Preview dark theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-dark-theme.png?raw=true)
 
 ### Light Theme
-![Preview light theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-light-theme.png)
+![Preview light theme](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-light-theme.png?raw=true)
 
 ## Installation
 
