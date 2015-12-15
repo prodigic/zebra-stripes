@@ -42,6 +42,7 @@ or use apm on the command line
 
 ### using zebra-stripes.less
 ``` css
+    .zebra-stripes.theme-mycooltheme-dark-syntax,
     .zebra-stripes.theme-base16-tomorrow-dark-theme,
     .zebra-stripes.theme-one-dark-syntax,
     .zebra-stripes.theme-solarized-dark-syntax,
@@ -54,6 +55,7 @@ or use apm on the command line
       }
     }
 
+    .zebra-stripes.theme-mycooltheme-light-syntax,
     .zebra-stripes.theme-base16-tomorrow-light-theme,
     .zebra-stripes.theme-one-light-syntax,
     .zebra-stripes.theme-solarized-light-syntax,
