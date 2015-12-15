@@ -47,11 +47,13 @@ to the zebra-stripes.less
 ``` css
 
 .zebra-stripes {
+
   &.theme-atom-dark-syntax,
   &.theme-monokai-seti,
   &.theme-base16-tomorrow-dark-theme,
   &.theme-one-dark-syntax,
   &.theme-solarized-dark-syntax  {
+
     atom-text-editor::shadow {
       .line:nth-child(odd) {
         background-color:rgba(255, 255, 255,0.042);
@@ -61,10 +63,12 @@ to the zebra-stripes.less
 }
 
 .zebra-stripes {
+
   &.theme-base16-tomorrow-light-theme,
   &.theme-one-light-syntax,
   &.theme-solarized-light-syntax,
   &.theme-atom-light-syntax {
+
     atom-text-editor::shadow {
       .line:nth-child(odd) {
         background-color:rgba(0, 0, 0,0.1);
@@ -78,20 +82,12 @@ to the zebra-stripes.less
 ``` css
 
 .zebra-stripes {
-  .theme-mycooltheme-dark-syntax {
-    atom-text-editor::shadow {
-      .line:nth-child(odd) {
-        background-color:rgba(255, 255, 255,0.042);
-      }
-    }
-  }
-}
 
-.zebra-stripes {
-  .theme-mycooltheme-light-syntax {
+  .theme-mycooltheme-dark-syntax {
+
     atom-text-editor::shadow {
       .line:nth-child(odd) {
-        background-color:rgba(0, 0, 0,0.1);
+        background-color:rgba(255, 255, 255,0.042); /* set alternate color here */
       }
     }
   }
