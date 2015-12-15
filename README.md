@@ -40,51 +40,61 @@ or use apm on the command line
 
 ## Adding support to an existing syntax theme
 
+You can easily add support for installed syntax themes by adding a selector
+to the zebra-stripes.less
+
 ### using zebra-stripes.less
 ``` css
-    .zebra-stripes.theme-mycooltheme-dark-syntax,
-    .zebra-stripes.theme-base16-tomorrow-dark-theme,
-    .zebra-stripes.theme-one-dark-syntax,
-    .zebra-stripes.theme-solarized-dark-syntax,
-    .zebra-stripes.theme-atom-dark-syntax  {
-      // To style other content in the text editor's shadow DOM, use the ::shadow expression
-      atom-text-editor::shadow {
-        .line:nth-child(odd) {
-          background-color:rgba(255, 255, 255,0.042);
-        }
-      }
-    }
 
-    .zebra-stripes.theme-mycooltheme-light-syntax,
-    .zebra-stripes.theme-base16-tomorrow-light-theme,
-    .zebra-stripes.theme-one-light-syntax,
-    .zebra-stripes.theme-solarized-light-syntax,
-    .zebra-stripes.theme-atom-light-syntax  {
-      // To style other content in the text editor's shadow DOM, use the ::shadow expression
-      atom-text-editor::shadow {
-        .line:nth-child(odd) {
-          background-color:rgba(0, 0, 0,0.1);
-        }
+.zebra-stripes {
+  &.theme-atom-dark-syntax,
+  &.theme-monokai-seti,
+  &.theme-base16-tomorrow-dark-theme,
+  &.theme-one-dark-syntax,
+  &.theme-solarized-dark-syntax  {
+    atom-text-editor::shadow {
+      .line:nth-child(odd) {
+        background-color:rgba(255, 255, 255,0.042);
       }
     }
+  }
+}
+
+.zebra-stripes {
+  &.theme-base16-tomorrow-light-theme,
+  &.theme-one-light-syntax,
+  &.theme-solarized-light-syntax,
+  &.theme-atom-light-syntax {
+    atom-text-editor::shadow {
+      .line:nth-child(odd) {
+        background-color:rgba(0, 0, 0,0.1);
+      }
+    }
+  }
+}
+
 ```
 ### building support directly into the theme.
 ``` css
-    .zebra-stripes.theme-mycooltheme-dark-syntax  {
-      // To style other content in the text editor's shadow DOM, use the ::shadow expression
-      atom-text-editor::shadow {
-        .line:nth-child(odd) {
-          background-color:rgba(255, 255, 255,0.042);
-        }
-      }
-    }
 
-    .zebra-stripes.theme-mycooltheme-light-syntax  {
-      // To style other content in the text editor's shadow DOM, use the ::shadow expression
-      atom-text-editor::shadow {
-        .line:nth-child(odd) {
-          background-color:rgba(0, 0, 0,0.1);
-        }
+.zebra-stripes {
+  .theme-mycooltheme-dark-syntax {
+    atom-text-editor::shadow {
+      .line:nth-child(odd) {
+        background-color:rgba(255, 255, 255,0.042);
       }
     }
+  }
+}
+
+.zebra-stripes {
+  .theme-mycooltheme-light-syntax {
+    atom-text-editor::shadow {
+      .line:nth-child(odd) {
+        background-color:rgba(0, 0, 0,0.1);
+      }
+    }
+  }
+}
+
 ```

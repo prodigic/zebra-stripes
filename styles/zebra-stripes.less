@@ -10,7 +10,7 @@
 .zebra-stripes.theme-solarized-dark-syntax,
 .zebra-stripes.theme-atom-dark-syntax  {
   // To style other content in the text editor's shadow DOM, use the ::shadow expression
-  atom-text-editor::shadow {
+  xatom-text-editor::shadow {
     .line:nth-child(odd) {
       background-color:rgba(255, 255, 255,0.042);
     }
@@ -25,6 +25,20 @@
   atom-text-editor::shadow {
     .line:nth-child(odd) {
       background-color:rgba(0, 0, 0,0.1);
+    }
+  }
+}
+
+
+.zebra-stripes.theme-monokai-seti,
+.zebra-stripes.theme-base16-tomorrow-dark-theme,
+.zebra-stripes.theme-one-dark-syntax,
+.zebra-stripes.theme-solarized-dark-syntax,
+.zebra-stripes.theme-atom-dark-syntax  {
+  // To style other content in the text editor's shadow DOM, use the ::shadow expression
+  atom-text-editor::shadow {
+    .line:nth-child(odd) {
+      background-color:rgba(255, 255, 255,0.042);
     }
   }
 }
