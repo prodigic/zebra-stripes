@@ -2,7 +2,7 @@
 
 Provides alternate line shading to increase legibility in text editors.
 
-The settings panel allows you to enable/disable logging to the console.
+The settings panel allows you to enable/disable the plugin and toggle logging to the console.
 
 ![Settings](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-settings.png?raw=true)
 

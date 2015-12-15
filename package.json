@@ -2,7 +2,7 @@
   "name": "zebra-stripes",
   "main": "./lib/zebra-stripes",
   "version": "1.0.5",
-  "description": "add zebra striping to the editors",
+  "description": "A plugin for the atom editor which adds zebra striping",
   "author": "Davey Waterson <davey@prodigic.com>",
   "keywords": [
     "ui",
