@@ -3,7 +3,7 @@
   "main": "./lib/zebra-stripes",
   "version": "1.0.0",
   "description": "add zebra striping to the editors",
-  "author": "Davey Waterson <davey@prodigic.com>"
+  "author": "Davey Waterson <davey@prodigic.com>",
   "keywords": [
     "ui",
     "colors",
