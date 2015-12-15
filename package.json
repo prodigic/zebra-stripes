@@ -1,7 +1,7 @@
 {
   "name": "zebra-stripes",
   "main": "./lib/zebra-stripes",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "add zebra striping to the editors",
   "author": "Davey Waterson <davey@prodigic.com>",
   "keywords": [
@@ -11,8 +11,8 @@
     "hacks",
     "theme"
   ],
-  "activationCommands":  [],
-  "repository":{
+  "activationCommands": [],
+  "repository": {
     "type": "git",
     "url": "https://github.com/prodigic/zebra-stripes"
   },
@@ -20,6 +20,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
