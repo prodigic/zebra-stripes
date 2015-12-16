@@ -20,5 +20,8 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/https://github.com/prodigic/zebra-stripes/issues"
+  }
 }
