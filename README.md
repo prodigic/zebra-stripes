@@ -1,4 +1,5 @@
 # zebra-stripes
+https://atom.io/packages/zebra-stripes
 
 Provides alternate line shading to increase legibility in text editors.
 
