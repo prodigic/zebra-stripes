@@ -11,6 +11,11 @@ module.exports = ZebraStripes =
       description: 'this switch will toggle the zebra stripe visual guides in the workspace'
       type: 'boolean'
       default: off
+    active_on_open:
+      title: 'Always start with zebra stripes enabled'
+      description: 'always on when atom starts'
+      type: 'boolean'
+      default: off
     log_to_console:
       title: 'Log debugging messages to console'
       description: 'enable/disable debug output via the console'
