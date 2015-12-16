@@ -4,41 +4,35 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.zebra-stripes.theme-monokai-seti,
-.zebra-stripes.theme-base16-tomorrow-dark-theme,
-.zebra-stripes.theme-one-dark-syntax,
-.zebra-stripes.theme-solarized-dark-syntax,
-.zebra-stripes.theme-atom-dark-syntax  {
-  // To style other content in the text editor's shadow DOM, use the ::shadow expression
-  xatom-text-editor::shadow {
-    .line:nth-child(odd) {
-      background-color:rgba(255, 255, 255,0.042);
+.zebra-stripes {
+
+  &.theme-my-syntax-dark-theme,
+  &.theme-atom-dark-syntax,
+  &.theme-monokai-seti,
+  &.theme-base16-tomorrow-dark-theme,
+  &.theme-one-dark-syntax,
+  &.theme-solarized-dark-syntax  {
+
+    atom-text-editor::shadow {
+      .line:nth-child(odd) {
+        background-color:rgba(255, 255, 255,0.042);
+      }
     }
   }
 }
 
-.zebra-stripes.theme-base16-tomorrow-light-theme,
-.zebra-stripes.theme-one-light-syntax,
-.zebra-stripes.theme-solarized-light-syntax,
-.zebra-stripes.theme-atom-light-syntax  {
-  // To style other content in the text editor's shadow DOM, use the ::shadow expression
-  atom-text-editor::shadow {
-    .line:nth-child(odd) {
-      background-color:rgba(0, 0, 0,0.1);
-    }
-  }
-}
+.zebra-stripes {
 
+  &.theme-my-syntax-light-theme,
+  &.theme-base16-tomorrow-light-theme,
+  &.theme-one-light-syntax,
+  &.theme-solarized-light-syntax,
+  &.theme-atom-light-syntax {
 
-.zebra-stripes.theme-monokai-seti,
-.zebra-stripes.theme-base16-tomorrow-dark-theme,
-.zebra-stripes.theme-one-dark-syntax,
-.zebra-stripes.theme-solarized-dark-syntax,
-.zebra-stripes.theme-atom-dark-syntax  {
-  // To style other content in the text editor's shadow DOM, use the ::shadow expression
-  atom-text-editor::shadow {
-    .line:nth-child(odd) {
-      background-color:rgba(255, 255, 255,0.042);
+    atom-text-editor::shadow {
+      .line:nth-child(odd) {
+        background-color:rgba(0, 0, 0,0.1);
+      }
     }
   }
 }
