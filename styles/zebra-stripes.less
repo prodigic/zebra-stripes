@@ -4,16 +4,21 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+/* Add zebra-stripes to dark syntax themes */
 .zebra-stripes {
-
+  /* <ADD THEME SELECTOR HERE> */
   &.theme-my-syntax-dark-theme,
   &.theme-atom-dark-syntax,
+  &.theme-firewatch-syntax,
+  &.theme-firewatch-green-syntax,
+  &.theme-monokai,
+  &.theme-pure-syntax,
   &.theme-monokai-seti,
   &.theme-base16-tomorrow-dark-theme,
   &.theme-one-dark-syntax,
-  &.theme-solarized-dark-syntax  {
+  &.theme-solarized-dark-syntax {
 
-    atom-text-editor::shadow {
+    atom-text-editor {
       .line:nth-child(odd) {
         background-color:rgba(255, 255, 255,0.042);
       }
@@ -21,17 +26,30 @@
   }
 }
 
+/* Add zebra-stripes to light syntax themes */
 .zebra-stripes {
-
+  /* <ADD THEME SELECTOR HERE> */
+  &.theme-apex-syntax,
   &.theme-my-syntax-light-theme,
   &.theme-base16-tomorrow-light-theme,
   &.theme-one-light-syntax,
   &.theme-solarized-light-syntax,
   &.theme-atom-light-syntax {
 
-    atom-text-editor::shadow {
+    atom-text-editor {
       .line:nth-child(odd) {
-        background-color:rgba(0, 0, 0,0.1);
+        background-color:rgba(0, 180, 0,0.1);
+      }
+    }
+  }
+}
+
+/* Add specific syntax theme support */
+.zebra-stripes {
+  &.theme-seti-syntax  {
+    atom-text-editor {
+      .line:nth-child(odd) {
+        background-color:rgba(255, 255, 255,0.12);
       }
     }
   }

@@ -28,15 +28,25 @@ or use apm on the command line
 
 ## Supported Syntax Themes
 
-1. Atom Dark
-2. Atom Light
-3. One Dark
-4. One Light
-5. Base16 Tomorrow Dark
-6. Base16 Tomorrow Light
-7. Solarized Dark
-8. Solarized Light
-9. Monokai Seti
+1.  apex-syntax,
+1.  atom-dark-syntax,
+1.  atom-light-syntax
+1.  base16-tomorrow-dark,
+1.  base16-tomorrow-light,
+1.  firewatch-green-syntax,
+1.  firewatch-syntax,
+1.  monokai-seti,
+1.  monokai,
+1. my-syntax-dark,
+1. my-syntax-light,
+1. one-dark-syntax,
+1. one-light-syntax,
+1. pure-syntax,
+1. seti-syntax
+1. solarized-dark-syntax  
+1. solarized-light-syntax,
+
+
 
 
 ## Adding support to an existing syntax theme
@@ -46,16 +56,21 @@ You can easily add support for installed syntax themes by adding a selector to t
 ### Using zebra-stripes.less (local changes)
 ``` css
 
+/* Add zebra-stripes to dark syntax themes */
 .zebra-stripes {
-
+  /* <ADD THEME SELECTOR HERE> */
   &.theme-my-syntax-dark-theme,
   &.theme-atom-dark-syntax,
+  &.theme-firewatch-syntax,
+  &.theme-firewatch-green-syntax,
+  &.theme-monokai,
+  &.theme-pure-syntax,
   &.theme-monokai-seti,
   &.theme-base16-tomorrow-dark-theme,
   &.theme-one-dark-syntax,
-  &.theme-solarized-dark-syntax  {
+  &.theme-solarized-dark-syntax {
 
-    atom-text-editor::shadow {
+    atom-text-editor {
       .line:nth-child(odd) {
         background-color:rgba(255, 255, 255,0.042);
       }
@@ -63,24 +78,36 @@ You can easily add support for installed syntax themes by adding a selector to t
   }
 }
 
+/* Add zebra-stripes to light syntax themes */
 .zebra-stripes {
-
+  /* <ADD THEME SELECTOR HERE> */
+  &.theme-apex-syntax,
   &.theme-my-syntax-light-theme,
   &.theme-base16-tomorrow-light-theme,
   &.theme-one-light-syntax,
   &.theme-solarized-light-syntax,
   &.theme-atom-light-syntax {
 
-    atom-text-editor::shadow {
+    atom-text-editor {
       .line:nth-child(odd) {
-        background-color:rgba(0, 0, 0,0.1);
+        background-color:rgba(0, 180, 0,0.1);
+      }
+    }
+  }
+}
+
+/* Add specific syntax theme support */
+.zebra-stripes {
+  &.theme-seti-syntax  {
+    atom-text-editor {
+      .line:nth-child(odd) {
+        background-color:rgba(255, 255, 255,0.12);
       }
     }
   }
 }
 
 ```
-
 Drop me a pull request if you want specific support added to the zebra-stripes plugin for your theme.
 
 
@@ -95,7 +122,7 @@ To add built-in support to custom themes you need to implement a CSS rule to pro
 
   .theme-my-syntax-theme {
 
-    atom-text-editor::shadow {
+    atom-text-editor {
       .line:nth-child(odd) {
         background-color:rgba(25, 25, 25,0.084); /* set alternate color here */
       }
