@@ -6,7 +6,7 @@ Provides alternate line shading to increase legibility in text editors.
 The settings panel allows you to enable/disable the plugin and toggle logging to the console.
 
 You may need to enable the plugin at startup as atom have changed the default to not being enabled to improve startup performance
- 
+
 ![Settings](https://github.com/prodigic/zebra-stripes/blob/master/zebra-stripes-settings.png?raw=true)
 
 ## Examples
@@ -133,3 +133,8 @@ To add built-in support to custom themes you need to implement a CSS rule to pro
 }
 
 ```
+## Other plugins
+
+### Computer Paper
+
+### Monokai Zebra Stripes
